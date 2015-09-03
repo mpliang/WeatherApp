@@ -1,0 +1,38 @@
+.bgc {
+	background-color: #ACF0F2;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#location {
+	color: black;
+}
+.appContainer {
+	text-align: center;
+}
+
+.displayCity {
+	font-size: 30px;
+	margin-top: 10px;
+	text-align: center;
+	color: #FD7400;
+}
+
+#displayArea {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	background-color: #BEDB39;
+	color: black;
+	border: 5px solid #225378;
+	padding: 10px;
+	border-radius: 4px;
+	box-shadow: 10px 10px #FD7400;
+	margin-bottom: 50px;
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 3s;
+}
+
+img {
+	height: 25px;
+	width: 25px;
+}
