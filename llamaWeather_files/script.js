@@ -1,0 +1,1 @@
+$(document).ready(function(){$("textarea").keyup(function(){$.ajax({type:"POST",url:"/preview",data:{toLlama:$("#toLlama").val()},datatype:"html",success:function(a){$("div#previewDisplay").html(a)},error:function(c,b,a){$("div#previewDisplay").html("<p>the llamas are waiting for you to type something.</p>")}})})});

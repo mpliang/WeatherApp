@@ -18,26 +18,28 @@ $(document).ready(init);
 			city = "autoip";
 		}
 
-		$.getJSON('http://api.wunderground.com/api/ed7493f8cb5454e1/geolookup/q/' + city + '.json')
-			.success(function(data){
-				console.log(data);
-				
-				if (data.response.error) {
-					console.log("error: ", data);
-					$('.displayCity').text(data.response.error.description);
-				} else {
-				$('.displayCity').text('');
-				var country = (data.location.country === 'US') ? data.location.state : data.location.country;
-				$('.displayCity').append(data.location.city + ", " + country);
-				}
-			})
-			.fail(function(error){
-				console.log("fatal error", error);
-				$('.displayCity').text("Please enter a valid city");
-			});
-
 		$.getJSON('http://api.wunderground.com/api/f072e1fa016ca1ac/forecast10day/q/' + city + '.json')
 			.success(function(data){
+
+						$.getJSON('http://api.wunderground.com/api/ed7493f8cb5454e1/geolookup/q/' + city + '.json')
+							.success(function(data){
+							console.log(data);
+				
+								if (data.response.error) {
+									console.log("error: ", data);
+									$('.displayCity').text(data.response.error.description);
+									$('#location').val("");
+								} else {
+								$('.displayCity').text('');
+								var country = (data.location.country === 'US') ? data.location.state : data.location.country;
+								$('.displayCity').append(data.location.city + ", " + country);
+								}
+							})
+							.fail(function(error){
+								console.log("fatal error", error);
+								$('.displayCity').text("Please enter a valid city");
+								$('#location').val("");
+							});
 
 				if (data.response.error){
 					console.log("city not found");
