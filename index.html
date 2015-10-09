@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>7 Day Weather App</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="animate.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-</head>
-<body class="bgc">
-	<div class="container">
-		<div class="appContainer">
-			<h1>Your 7 Day Weather Forecast</h1>
-			<h4>(In Comic Sans)</h4>
-			<input id="location" type="text" placeholder="Enter your location" autofocus="autofocus">
-			<button class="btn btn-primary" id="go" >Go!</button>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>7 Day Weather App</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	</head>
+
+	<body>
+		<div class="weatherapp">
+			<div class="appContainer">
+				<h1>weekly weather</h1>
+				<input id="location" type="text" placeholder="Enter your location" autofocus class="location">
+				<span id="instructions">Hit enter to get weather of current location</span>
+				<!-- <button id="go">Go!</button> -->
+			</div>
+			<div class="displayCity"></div>
 		</div>
-		<div class="displayCity"></div>
-		
 
-	</div>
+		<footer class="info">
+			<p>Created by Michael Liang</p>
+			<p>View Source Code on <a href="https://github.com/mpliang/WeatherApp">GitHub</a></p>
+		</footer>
 
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="main.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="bundle.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
 
-</body>
 </html>

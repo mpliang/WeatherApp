@@ -1,0 +1,27 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpliang/WeatherApp.git"
+  },
+  "author": "Michael Liang <michaelpliang@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpliang/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/mpliang/WeatherApp#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "css-loader": "^0.17.0",
+    "jquery": "^2.1.4",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.12.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
